@@ -1,0 +1,39 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "mytimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 */5 8-22 * * 1-5"
+    },
+    {
+      "type": "blob",
+      "direction": "in",
+      "name": "foodsiInputblob",
+      "path": "frequency-of-packages/foodsi_storage.json",
+      "connection": "DB_CONNECTION"
+    },
+    {
+      "name": "foodsiOutputblob",
+      "type": "blob",
+      "path": "frequency-of-packages/foodsi_storage.json",
+      "connection": "DB_CONNECTION",
+      "direction": "out"
+    },
+    {
+      "type": "blob",
+      "direction": "in",
+      "name": "tgtgInputblob",
+      "path": "frequency-of-packages/tgtg_storage.json",
+      "connection": "DB_CONNECTION"
+    },
+    {
+      "name": "tgtgOutputblob",
+      "type": "blob",
+      "path": "frequency-of-packages/tgtg_storage.json",
+      "connection": "DB_CONNECTION",
+      "direction": "out"
+    }
+  ]
+}
